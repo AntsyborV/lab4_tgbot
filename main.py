@@ -27,7 +27,7 @@ def movie_handler(update, context):
 
     # TODO No.2:
     # Given a API, use the API to retrieve information related to movie name
-    constructed_url = "http://www.omdbapi.com/?apikey="+API_KEY + movie_name
+    constructed_url = "http://www.omdbapi.com/?apikey="+API_KEY + "&t=" + movie_name.replace(" ","+")
     print("====== constructed_url: " + constructed_url)
     contents = requests.get(constructed_url).json()
     print("====== contents: " + str(contents))
