@@ -2,10 +2,6 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import requests
 from config import BOT_TOKEN, API_KEY,IDS_ALLOWED
 
-BOT_TOKEN   = "6120590888"
-API_KEY     = "AAEIBmYyggowy_WVCufHyg2m7HxeCwSy1h0"
-IDS_ALLOWED = []
-
 def movie_handler(update, context):
     """ Get the userId + firstname + get/store results"""
     id = int(update.message.from_user.id)
