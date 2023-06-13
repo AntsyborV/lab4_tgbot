@@ -1,5 +1,6 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import requests
+from config import BOT_TOKEN, API_KEY,IDS_ALLOWED
 
 BOT_TOKEN   = "6120590888"
 API_KEY     = "AAEIBmYyggowy_WVCufHyg2m7HxeCwSy1h0"
